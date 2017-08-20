@@ -1,0 +1,6 @@
+{% extends 'students/master.html' %} {% block content %}
+<form method="post">{% csrf_token %}
+    Are you sure you want to delete "{{ object.firstname }} {{ object.lastname }}" ?
+    <input type="submit" value="Submit" />
+</form>
+{% endblock %}

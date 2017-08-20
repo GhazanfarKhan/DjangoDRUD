@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <title>
+        Django App
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{% static 'students/bootstrap/css/bootstrap.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'students/style.css' %}" />
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Student App</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        {% block content %} {% endblock %}
+    </div>
+
+</body>
+
+</html>
